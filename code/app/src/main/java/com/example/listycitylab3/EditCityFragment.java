@@ -34,10 +34,10 @@ public class EditCityFragment extends DialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         View view =
-                getLayoutInflater().inflate(R.layout.fragment_edit_city, null);
+                getLayoutInflater().inflate(R.layout.fragment_add_city, null);
 
-        EditText cityName = view.findViewById(R.id.city_text);
-        EditText provinceName = view.findViewById(R.id.province_text);
+        EditText cityName = view.findViewById(id.edit_text_city_text);
+        EditText provinceName = view.findViewById(id.edit_text_province_text);
 
         cityName.setText(cityToEdit.getName());
         provinceName.setText(cityToEdit.getProvince());
